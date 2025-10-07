@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav aria-label="Main Navigation">
+      <h1>My Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading">About Me</h2>
+    <p>Hello! I'm a web developer passionate about building beautiful and functional websites.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+
+    <label for="project-filter" class="visually-hidden">Filter projects</label>
+    <input type="text" id="project-filter" placeholder="Filter projects..." aria-label="Filter projects">
+
+    <div class="project-list">
+      <article class="project" data-tags="web">
+        <h3>Website Redesign</h3>
+        <p>Modern responsive website for a local business.</p>
+      </article>
+
+      <article class="project" data-tags="app">
+        <h3>Task Manager App</h3>
+        <p>Productivity app to manage daily tasks efficiently.</p>
+      </article>
+
+      <article class="project" data-tags="design">
+        <h3>Logo Design</h3>
+        <p>Branding and logo design for startups.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>UI/UX Design</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+<!-- Gallery Section -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <h2 id="gallery-heading">Gallery</h2>
+  <div class="gallery-list">
+    <img src="https://picsum.photos/400/300?random=1" alt="Random Image 1">
+    <img src="https://picsum.photos/400/300?random=2" alt="Random Image 2">
+    <img src="https://picsum.photos/400/300?random=3" alt="Random Image 3">
+    <img src="https://picsum.photos/400/300?random=4" alt="Random Image 4">
+    <img src="https://picsum.photos/400/300?random=5" alt="Random Image 5">
+    <img src="https://picsum.photos/400/300?random=6" alt="Random Image 6">
+  </div>
+</section>
+
+
+
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading">Testimonials</h2>
+    <div class="testimonial">
+      <blockquote>
+        “A fantastic developer! Delivered our project on time and exceeded expectations.”
+      </blockquote>
+      <cite>– Client A</cite>
+    </div>
+    <div class="testimonial">
+      <blockquote>
+        “Great communication and top-notch skills. Highly recommended!”
+      </blockquote>
+      <cite>– Client B</cite>
+    </div>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section id="resume" aria-labelledby="resume-heading">
+    <h2 id="resume-heading">Resume</h2>
+    <a href="resume.pdf" download class="resume-btn" aria-label="Download my CV">Download My CV</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact Me</h2>
+
+    <form id="contact-form" aria-label="Contact Form">
+      <label for="name" class="visually-hidden">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+
+      <label for="email" class="visually-hidden">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+
+      <label for="message" class="visually-hidden">Your Message</label>
+      <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="form-message" aria-live="polite"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
